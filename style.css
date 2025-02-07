@@ -4,6 +4,10 @@ body {
   color: #333;
   text-align: center;
 }
+title {
+            font-family: 'New Rocker', cursive; /* New Rocker font for heading */
+            color: #772345;
+}
 h1 {
   color: #772345;
 }
