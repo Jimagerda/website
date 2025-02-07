@@ -7,6 +7,7 @@ body {
 h1 {
     font-family: 'New Rocker', cursive; /* New Rocker font for heading */
     color: #772345;
+    font-size: 60px;
 }
 
 header {
