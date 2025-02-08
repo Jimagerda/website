@@ -75,3 +75,31 @@ nav ul li a:hover {
     text-decoration: none; /* Remove underline */
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(255, 255, 255, 0.6);
 }
+
+/* Style for social media list */
+ul.socials {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  ul.socials li {
+    display: inline-block;
+    margin: 10px;
+  }
+  
+  ul.socials li a {
+    font-size: 30px; /* Icon size */
+    color: #333; /* Icon color */
+    text-decoration: none;
+  }
+  
+  ul.socials li a:hover {
+    color: #F35C03; /* Hover color */
+    transition: color 0.3s ease;
+  }
+  
+  ul.socials li a i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
