@@ -33,7 +33,7 @@ nav ul li {
 }
 nav ul li a {
     color: white;
-    text-stroke: 2px solid #F35C03;
+    -webkit-text-stroke: 2px solid #F35C03;
     text-decoration: none;
     font-size: 22px;
 }
