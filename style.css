@@ -1,40 +1,87 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #DFDCFD;
-  color: #333;
-  text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #C7BEFF;
+    color: #333;
+    text-align: center;
 }
+
 h1 {
     font-family: 'New Rocker', cursive; /* New Rocker font for heading */
     color: #772345;
     font-size: 60px;
+    margin-bottom: 20px; /* Adds space below the header */
+}
+
+h2 {
+    color: #F35C03;
+    font-family: Arial, sans-serif;
+    font-size: 28px; /* Add size for better prominence */
+    margin-top: 40px;
+}
+
+ul.projects {
+    list-style-type: none;
+    margin: 0 15px;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+    color: #C7BEFF;
+    font-size: 22px;
+    font-weight: bold; /* Makes the links bold */
+    -webkit-text-stroke: 1px solid #F35C03; 
 }
 
 header {
     text-align: center;
     display: flex;
     padding: 20px 40px;
-    color: white;
     font-family: Arial, sans-serif;
-  flex-direction: column;
+    flex-direction: column;
+    background-color: #DFDCFD; /* Add background to header for contrast */
 }
 
 /* Navigation styles */
 nav ul {
     list-style-type: none;
     margin: 0;
-    -webkit-text-stroke: 2px solid #F35C03;
     padding: 0;
     display: flex;
+    justify-content: center; /* Centers the navigation horizontally */
 }
+
 nav ul li {
     margin: 0 15px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 22px;
+    font-weight: bold; /* Makes the links bold */
+    -webkit-text-stroke: 1px solid #F35C03; /* Adjusted stroke for clarity */
 }
+
 nav ul li a:hover {
     text-decoration: underline;
+    color: #F35C03; /* Changes color on hover */
+    animation: bounce 0.5s ease;
+}
+
+/* Keyframes for hover animation */
+@keyframes bounce {
+    0% {
+        transform: translateY(0); /* Initial position */
+    }
+    30% {
+        transform: translateY(-10px); /* Move up */
+    }
+    50% {
+        transform: translateY(0); /* Go back to original position */
+    }
+    70% {
+        transform: translateY(-5px); /* Slightly move up */
+    }
+    100% {
+        transform: translateY(0); /* Final position */
+    }
 }
