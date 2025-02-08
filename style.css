@@ -19,7 +19,7 @@ header {
     font-family: Arial, sans-serif;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;  /* Make the header take up full viewport height */
+  height: 50vh;  /* Make the header take up full viewport height */
 }
 
 /* Navigation styles */
