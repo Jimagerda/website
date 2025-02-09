@@ -67,8 +67,9 @@ header {
     flex-direction: column; /* Stack the content vertically */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    padding: 40px;
+    padding: 20px;
     background-color: #DFDCFD; /* Add background to header for contrast */
+    transition: padding 0.3s ease;
 }
 
 nav {
@@ -86,6 +87,7 @@ nav ul {
 
 nav ul li {
     margin: 0;
+    flex-grow: 1; /* Allow the <li> to grow and fill available space */
 }
 
 nav ul li a {
@@ -93,11 +95,14 @@ nav ul li a {
     text-decoration: none;
     font-size: 22px;
     font-weight: bold;
-    padding: 15px 30px; /* Padding for button appearance */
+    padding: 15px 10px; /* Padding for button appearance */
     background-color: #F35C03; /* Button background */
     border-radius: 5px; /* Rounded corners for buttons */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Button shadow */
     transition: background-color 0.3s, transform 0.3s;
+    text-align: center; /* Center text inside the button */
+    display: block; /* Ensure the <a> is a block element to fill the <li> */
+    width: 100%;
 }
 
 nav ul li a:hover {
@@ -105,6 +110,33 @@ nav ul li a:hover {
     transform: scale(1.1); /* Slight scaling effect on hover */
     text-decoration: none; /* Remove underline */
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 1), 0px 0px 20px rgba(255, 255, 255, 0.8), 0px 0px 30px rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1%; /* Reduced padding on small screens */
+    }
+
+    header h1 {
+        font-size: 50px; /* Adjust font size for header */
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation vertically */
+        gap: 8px; /* Add space between items */
+    }
+
+    nav ul li a {
+        font-size: 18px; /* Smaller font for mobile */
+        padding: 10px 10px; /* Adjust padding for buttons */
+        width: 100%; /* Full width of the parent container */
+
+    }
+
+    .app-button {
+        width: 250px;
+        height: 250px; /* Adjust app button size */
+    }
 }
 
 /* Style for social media list */
