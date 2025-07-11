@@ -25,6 +25,7 @@ ul.projects {
     padding: 0;
     display: flex;
     justify-content: center;
+    gap: 30px; /* add space between cards */
 }
 
 .app-button {
@@ -49,6 +50,7 @@ ul.projects {
 
 .button-text {
     position: absolute;
+    z-index: 2;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
