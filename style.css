@@ -26,6 +26,7 @@ ul.projects {
     display: flex;
     justify-content: center;
     gap: 30px; /* add space between cards */
+    flex-wrap: wrap;
 }
 
 .app-button {
@@ -115,7 +116,12 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-
+    .projects {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;    /* Center the stacked cards */
+        gap: 20px;              /* Space between stacked cards */
+    }
+    
     header {
         padding: 1%; /* Reduced padding on small screens */
     }
