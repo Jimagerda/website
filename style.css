@@ -132,7 +132,7 @@ nav ul li a:hover {
     nav ul li a {
         font-size: 18px; /* Smaller font for mobile */
         padding: 10px 10px; /* Adjust padding for buttons */
-        width: 100%; /* Full width of the parent container */
+        width: auto; /* Full width of the parent container */
 
     }
 
