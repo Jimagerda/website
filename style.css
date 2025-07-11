@@ -137,7 +137,7 @@ nav ul li a:hover {
     }
 
     .app-button {
-        width: 90vw;
+        width: 250px;
         height: 250px; /* Adjust app button size */
     }
     .button-text {
