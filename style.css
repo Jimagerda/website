@@ -115,9 +115,7 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
-    body {
-        font-size: 15px;
-    }
+
     header {
         padding: 1%; /* Reduced padding on small screens */
     }
